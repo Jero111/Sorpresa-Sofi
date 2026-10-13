@@ -290,6 +290,8 @@
                 moveNoButton();
             } else if (no_clicks === 4) {
                 resetNoButton();
+                btnNo.classList.remove('bg-gray-200', 'text-gray-700'); // Quitas el color original
+                btnNo.classList.add('bg-red-500', 'hover:bg-red-600', 'text-white'); // Añades el rojo intenso
             } else if (no_clicks >= 5) {
                 modal1.classList.remove('hidden');
             }
